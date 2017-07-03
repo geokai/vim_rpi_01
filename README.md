@@ -1,5 +1,5 @@
-## vim confic files
+## vim configuration files
 
-**Note**:
+### Note:
 
 this configuration uses _Pathogen_ for plug-in management.
