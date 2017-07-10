@@ -14,7 +14,7 @@ filetype off
 execute pathogen#infect()
 filetype plugin indent on
 set nocompatible
-"
+
 " SYNTASTIC:---------------------------------------------------------------{{{1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -28,7 +28,7 @@ let g:syntastic_check_on_x = 0
 let g:syntastic_python_python_exec = 'python3'
 
 " NERDTree:----------------------------------------------------------------{{{1
-nnoremap <leader>tr <ESC>:NERDTreeTabsToggle<CR>
+map <F9> <ESC>:NERDTreeTabsToggle<CR>
 
 " Show SYNTAX HIGHLIGHTING GROUP for word under cursor:--------------------{{{1
 "
@@ -39,7 +39,7 @@ function! <sid>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-"
+
 " BASIC SETTNGS:-----------------------------------------------------------{{{1
 
 set t_Co=256
@@ -135,9 +135,6 @@ nnoremap <leader>p <ESC>:tabp<CR>
 " use relative numbering
 nnoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>
 inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
-"nnoremap <silent> <leader>un <ESC>:set number<CR><ESC>
-"inoremap <silent> <leader>u <ESC>:set relativenumber<CR><ESC>i
-"inoremap <silent> <leader>un <ESC>:set number<CR><ESC>i
 
 " movement: centering, cursor to page
 "nnoremap G Gzz
@@ -163,6 +160,7 @@ map <F2> <ESC>i#!/bin/bash<ESC>o<ESC>
 map <F3> <ESC>i#!/usr/local/bin/python3<ESC>o<ESC>
 map <F4> <ESC>o# This file was created on <ESC>:r!date "+\%x"<ESC>kJ0<ESC>
 map <F5> <ESC>o# Author: George Kaimakis<ESC>o<ESC>
+
 " Folding:-----------------------------------------------------------------{{{1
 highlight Foldcolumn ctermfg=Darkgrey ctermbg=0 cterm=BOLD
 highlight Folded ctermfg=Darkgrey ctermbg=NONE cterm=none
@@ -205,4 +203,3 @@ set backupskip=/tmp/*,/private/tmp/*"
 " 1}}}
 
 " End of .vimrc file:
-
