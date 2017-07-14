@@ -159,7 +159,7 @@ nnoremap <silent> <leader>nh :nohl<cr>
 map <F2> <ESC>i#!/bin/bash<ESC>o<ESC>
 map <F3> <ESC>i#!/usr/local/bin/python3<ESC>o<ESC>
 map <F4> <ESC>o# This file was created on <ESC>:r!date "+\%x"<ESC>kJ0<ESC>
-map <F5> <ESC>o# Author: George Kaimakis<ESC>o<ESC>
+map <F5> <ESC>o# Author: George Kaimakis - https://github.com/geokai<ESC>o<ESC>
 
 " Folding:-----------------------------------------------------------------{{{1
 highlight Foldcolumn ctermfg=Darkgrey ctermbg=0 cterm=BOLD
