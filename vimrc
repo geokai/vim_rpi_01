@@ -147,6 +147,10 @@ inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
 "nnoremap { {zz
 
 " miscilanious mappings:
+" -open vimrc in a split and edit
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+" -source the vimrc file
+nnoremap <leader>sv :source $MYVIMRC<CR>
 " -all-caps & continue
 inoremap <c-u> <esc>viwUea
 " -add missing ";" to end of statements
@@ -170,7 +174,6 @@ set foldlevelstart=0
 
 function! MyFoldText()  "  {{{2
   let line = getline(v:foldstart)
-
   let nucolwidth = &fdc + &number * &numberwidth
   let windowwidth = winwidth(0) - nucolwidth - 3
   let foldedlinecount = v:foldend - v:foldstart
