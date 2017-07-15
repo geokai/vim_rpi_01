@@ -161,7 +161,7 @@ nnoremap <leader>: mqA:<ESC>`q
 nnoremap <silent> <leader>nh :nohl<cr>
 " -useful Fkey mappings:
 map <F2> <ESC>i#!/bin/bash<ESC>o<ESC>
-map <F3> <ESC>i#!/usr/local/bin/python3<ESC>o<ESC>
+map <F3> <ESC>i#!/usr/bin/python3<ESC>o<ESC>
 map <F4> <ESC>o# This file was created on <ESC>:r!date "+\%x"<ESC>kJ0<ESC>
 map <F5> <ESC>o# Author: George Kaimakis - https://github.com/geokai<ESC>o<ESC>
 
