@@ -92,14 +92,14 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " toggle wrapping:
-noremap <silent> <leader>wr <ESC>:set wrap!<CR><ESC>
+nnoremap <silent> <leader>wr <ESC>:set wrap!<CR><ESC>
 
 " remap the arrow keys:
 " : in NORMAL mode
-noremap <up> ddkP
-noremap <left> <Nop>
-noremap <right> <Nop>
-noremap <down> ddp
+nnoremap <up> <Nop>
+nnoremap <left> <Nop>
+nnoremap <right> <Nop>
+nnoremap <down> <Nop>
 
 " : in INSERT mode
 inoremap <up> <Nop>
@@ -148,7 +148,7 @@ inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
 
 " miscilanious mappings:
 " -open vimrc in a split and edit
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>ev :tabnew $MYVIMRC<CR>
 " -source the vimrc file
 nnoremap <leader>sv :source $MYVIMRC<CR>
 " -all-caps & continue
@@ -157,7 +157,7 @@ inoremap <c-u> <esc>viwUea
 nnoremap <leader>; mqA;<ESC>`q
 " -add missing ":" to end of statements
 nnoremap <leader>: mqA:<ESC>`q
-" - search & highlighting
+" - negate highlighting
 nnoremap <silent> <leader>nh :nohl<cr>
 " -useful Fkey mappings:
 map <F2> <ESC>i#!/bin/bash<ESC>o<ESC>
